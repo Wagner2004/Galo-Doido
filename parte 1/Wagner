@@ -1,0 +1,33 @@
+import math
+
+def area_circulo(raio):
+    """Calcula a área de um círculo dado o raio."""
+    return math.pi * raio ** 2
+
+def area_retangulo(largura, altura):
+    """Calcula a área de um retângulo dadas a largura e a altura."""
+    return largura * altura
+
+def area_triangulo(base, altura):
+    """Calcula a área de um triângulo dados a base e a altura."""
+    return (base * altura) / 2
+
+def main():
+    # Exemplo de uso das funções
+    
+    # Círculo
+    raio = float(input("Digite o raio do círculo: "))
+    print(f"A área do círculo é: {area_circulo(raio):.2f}")
+    
+    # Retângulo
+    largura = float(input("Digite a largura do retângulo: "))
+    altura = float(input("Digite a altura do retângulo: "))
+    print(f"A área do retângulo é: {area_retangulo(largura, altura):.2f}")
+    
+    # Triângulo
+    base = float(input("Digite a base do triângulo: "))
+    altura = float(input("Digite a altura do triângulo: "))
+    print(f"A área do triângulo é: {area_triangulo(base, altura):.2f}")
+
+if __name__ == "__main__":
+    main()
